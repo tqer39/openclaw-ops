@@ -4,8 +4,8 @@ services:
     container_name: openclaw-gateway
     restart: unless-stopped
     ports:
-      - "${OPENCLAW_GATEWAY_PORT:-18789}:18789"
-      - "${OPENCLAW_BRIDGE_PORT:-18790}:18790"
+      - '${OPENCLAW_GATEWAY_PORT:-18789}:18789'
+      - '${OPENCLAW_BRIDGE_PORT:-18790}:18790'
     volumes:
       - ${OPENCLAW_CONFIG_DIR:-./.openclaw}:/home/node/.openclaw
       - ${OPENCLAW_WORKSPACE_DIR:-./workspace}:/home/node/workspace
@@ -27,4 +27,4 @@ services:
       - ${OPENCLAW_WORKSPACE_DIR:-./workspace}:/home/node/workspace
     env_file:
       - .env
-    command: ["node", "openclaw.mjs", "onboard"]
+    command: ['node', 'openclaw.mjs', 'onboard']
