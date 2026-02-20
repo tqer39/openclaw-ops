@@ -1,0 +1,28 @@
+name: Docker Compose Validate
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'docker-compose.yml'
+      - '.env.example'
+  pull_request:
+    paths:
+      - 'docker-compose.yml'
+      - '.env.example'
+  workflow_dispatch:
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v6
+      - name: Copy .env from example
+        run: cp .env.example .env
+      - name: Validate docker-compose.yml
+        run: docker compose config --quiet
