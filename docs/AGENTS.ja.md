@@ -32,16 +32,22 @@ openclaw-ops は OpenClaw の構成・運用リポジトリです。CI/CD ワー
 │   ├── auto_assign.yml     # レビュワー自動アサイン
 │   ├── copilot-instructions.md
 │   └── labeler.yml         # PR 自動ラベル付けルール
-├── docs/                   # 日本語翻訳
-├── AGENTS.md               # エージェントガイドライン（英語）
-├── CLAUDE.md               # Claude Code 設定
-├── README.md               # プロジェクト紹介（英語）
-├── biome.json              # Biome 設定
-├── cspell.json             # スペルチェッカー辞書
-├── renovate.json5          # 依存関係更新設定
-├── .markdownlint.json      # Markdown リントルール
-├── .pre-commit-config.yaml # pre-commit フック
-├── .textlintrc             # 日本語テキストリントルール
+├── docs/
+│   ├── AGENTS.ja.md            # エージェントガイドライン（日本語）
+│   ├── README.ja.md            # プロジェクト紹介（日本語）
+│   ├── docker-setup.md         # Docker/Podman セットアップガイド
+│   └── docker-setup.ja.md      # Docker/Podman セットアップガイド（日本語）
+├── AGENTS.md                   # エージェントガイドライン（英語）
+├── CLAUDE.md                   # Claude Code 設定
+├── README.md                   # プロジェクト紹介（英語）
+├── docker-compose.yml          # Docker Compose 設定
+├── .env.example                # 環境変数テンプレート
+├── biome.json                  # Biome 設定
+├── cspell.json                 # スペルチェッカー辞書
+├── renovate.json5              # 依存関係更新設定
+├── .markdownlint.json          # Markdown リントルール
+├── .pre-commit-config.yaml     # pre-commit フック
+├── .textlintrc                 # 日本語テキストリントルール
 └── .gitignore
 ```
 

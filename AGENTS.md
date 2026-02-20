@@ -28,16 +28,22 @@ openclaw-ops is the configuration and operations repository for OpenClaw. It man
 │   ├── auto_assign.yml     # Auto-assign reviewers
 │   ├── copilot-instructions.md
 │   └── labeler.yml         # PR auto-labeling rules
-├── docs/                   # Japanese translations
-├── AGENTS.md               # Agent guidelines (English)
-├── CLAUDE.md               # Claude Code instructions
-├── README.md               # Project introduction (English)
-├── biome.json              # Biome config
-├── cspell.json             # Spell checker dictionary
-├── renovate.json5          # Dependency update config
-├── .markdownlint.json      # Markdown lint rules
-├── .pre-commit-config.yaml # Pre-commit hooks
-├── .textlintrc             # Japanese text lint rules
+├── docs/
+│   ├── AGENTS.ja.md            # Agent guidelines (Japanese)
+│   ├── README.ja.md            # Project introduction (Japanese)
+│   ├── docker-setup.md         # Docker/Podman setup guide
+│   └── docker-setup.ja.md      # Docker/Podman setup guide (Japanese)
+├── AGENTS.md                   # Agent guidelines (English)
+├── CLAUDE.md                   # Claude Code instructions
+├── README.md                   # Project introduction (English)
+├── docker-compose.yml          # Docker Compose configuration
+├── .env.example                # Environment variable template
+├── biome.json                  # Biome config
+├── cspell.json                 # Spell checker dictionary
+├── renovate.json5              # Dependency update config
+├── .markdownlint.json          # Markdown lint rules
+├── .pre-commit-config.yaml     # Pre-commit hooks
+├── .textlintrc                 # Japanese text lint rules
 └── .gitignore
 ```
 
