@@ -30,6 +30,7 @@ prek run -a
 | --- | --- |
 | [Agent Guidelines](AGENTS.md) | 📋 Claude Code and agent guidance |
 | [CLAUDE.md](CLAUDE.md) | 🔧 Claude Code project instructions |
+| [Docker / Podman Setup](docs/docker-setup.md) | 🐳 Docker/Podman deployment guide |
 
 ## 📄 License
 
