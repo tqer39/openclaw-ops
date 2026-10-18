@@ -52,8 +52,8 @@ openclaw-ops is the configuration and operations repository for OpenClaw. It man
 | Secret | Workflow | Description |
 | --- | --- | --- |
 | `OPENAI_API_KEY` | generate-pr-description | OpenAI API key for PR title/description generation |
-| `GHA_APP_ID` | update-license-year | GitHub App ID for automated commits |
-| `GHA_APP_PRIVATE_KEY` | update-license-year | GitHub App private key for automated commits |
+| `MAINTENANCE_APP_ID` | update-license-year | GitHub App ID for automated commits |
+| `MAINTENANCE_APP_PRIVATE_KEY` | update-license-year | GitHub App private key for automated commits |
 
 ## ⚡ Key Technical Decisions
 

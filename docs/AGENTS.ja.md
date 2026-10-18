@@ -56,8 +56,8 @@ openclaw-ops は OpenClaw の構成・運用リポジトリです。CI/CD ワー
 | シークレット | ワークフロー | 説明 |
 | --- | --- | --- |
 | `OPENAI_API_KEY` | generate-pr-description | PR タイトル・説明文生成用の OpenAI API キー |
-| `GHA_APP_ID` | update-license-year | 自動コミット用の GitHub App ID |
-| `GHA_APP_PRIVATE_KEY` | update-license-year | 自動コミット用の GitHub App 秘密鍵 |
+| `MAINTENANCE_APP_ID` | update-license-year | 自動コミット用の GitHub App ID |
+| `MAINTENANCE_APP_PRIVATE_KEY` | update-license-year | 自動コミット用の GitHub App 秘密鍵 |
 
 ## ⚡ 主要な技術選定
 
